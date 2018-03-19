@@ -71,45 +71,17 @@ a
 
 #main
   background-color: #212121
-  height: 150vh
+  display: inline-block
   margin: 0
-
-#cover
-  width: 100%
-  height: 30vh
-  position: absolute
-  margin-bottom: 0
-  bottom: 0
-  background-color: rgba(0, 0, 0, 0.5)
 
 #footer
   background-attachment: fixed
   background-size: cover
-  background-image: url('https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2cf76f5fe8c1347af38e4b515499e62&auto=format&fit=crop&w=1489&q=80')
+  background-image: url('https://images.pexels.com/photos/45085/pexels-photo-45085.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb')
   width: 100%
-  height: 30vh
+  height: 45%
   position: relative
-  margin-bottom: 0
   bottom: 0
-  p
-    position: absolute
-    right: 70vw
-    padding-top: 2.5%
-    margin-left: 2%
-    font-family: "Roboto Mono"
-  img
-    background-color: #fddfb0
-    position: absolute
-    right: 3vw
-    width: 12%
-    border-radius: 30000px
-    top: 10%
-  h3
-    font-family: limelight
-    position: absolute
-    top: 33%
-    left: 60vw
-    font-size: 600%
 
 #titleimg
   width: 4%
@@ -130,22 +102,31 @@ a
     left: 44%
 
 #thingA
-  border: 1px solid red
-  margin: 0
-  display: inline-block
+  @media only screen and (max-width: 768px)
+    display: inline-block
+  width: 100%
+  display: flex
 
 #thingAtxt
+  flex: 1
+  display: inline-block
   @media only screen and (max-width: 768px)
     width: 80%
     margin-top: 22%
+    flex: none
+    h1
+      font-size: 8vw
+    p
+      font-size: 4vw
+      line-height: normal
   margin-top: 10%
   margin-left: 10%
   background-color: #111111
-  display: inline-block
   width: 35%
   h1
     font-family: $logofont
     text-align: center
+
   p
     font-family: Quicksand
     text-align: left
@@ -155,10 +136,13 @@ a
     font-weight: 300
 
 #thingAimg
+  flex: 1
   @media only screen and (max-width: 768px)
     float: none
+    width: 80%
+    margin-top: 22%
+    flex: none
   float: right
-  display: inline-block
   margin-right: 10%
   margin-top: 10%
   margin-left: 10%
@@ -173,19 +157,33 @@ a
   min-height: 30vh
   background-image: url('https://images.unsplash.com/photo-1484666086787-6cd0ccd39860?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a7142e88c5db88aa13e46ce851503152&auto=format&fit=crop&w=1189&q=80')
 
+#thingB
+  @media only screen and (max-width: 768px)
+    display: inline-block
+  width: 100%
+  display: flex
+  margin-bottom: 10%
+
 #thingBtxt
+  flex: 1
+  display: inline-block
+  @media only screen and (max-width: 768px)
+    width: 80%
+    margin-top: 22%
+    flex: none
+    h1
+      font-size: 8vw
+    p
+      font-size: 4vw
+      line-height: normal
+  margin-top: 10%
+  margin-left: 10%
   background-color: #111111
-  position: relative
-  top: 50vh
-  width: 30%
-  height: 40vh
-  float: left
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
-  left: 60vw
+  width: 35%
   h1
     font-family: $logofont
     text-align: center
+
   p
     font-family: Quicksand
     text-align: left
@@ -195,22 +193,23 @@ a
     font-weight: 300
 
 #thingBimg
-  left: 10vw
+  flex: 1
+  @media only screen and (max-width: 768px)
+    float: none
+    width: 80%
+    margin-top: 22%
+    flex: none
+  float: right
+  margin-right: 10%
+  margin-top: 10%
+  margin-left: 10%
   opacity: 1
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
   border-radius: 5px
-  position: relative
-  top: 50vh
   background-attachment: fixed
-  background-position: center
+  background-position: left
   background-repeat: no-repeat
   background-size: cover
-  width: 40%
-  height: 40vh
-  background-image: url('https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7e3e17dd6c875f2530c522aa3529ba60&auto=format&fit=crop&w=1961&q=80')
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
-  &:hover
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
-
-#thingBtxt:hover
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+  width: 35%
+  min-height: 30vh
+  background-image: url('https://images.pexels.com/photos/416053/pexels-photo-416053.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb')
