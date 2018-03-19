@@ -1,4 +1,5 @@
 $(window).on("load",function() {
+
   function fade(pageLoad) {
     var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
     var min=-1, max=1, threshold=0;
@@ -25,5 +26,8 @@ $(window).on("load",function() {
     }, 500);
     return false;
   });
+
+
+
 
 });
